@@ -5,9 +5,10 @@
 }
 <br />
 
-<h2 class="text-info">Create Product Type</h2>
-<form asp-action="Create" method="post">
+<h2 class="text-info">Edit Product Type</h2>
+<form asp-action="Edit" method="post">
     <div class="p-4 rounded border">
+        <input type="hidden" asp-for="Id"/>
         <div asp-validation-summary="ModelOnly" class="text-danger">
 
         </div>
@@ -21,7 +22,7 @@
             <span asp-validation-for="ProductType" class="text-danger"></span>
         </div>
         <div class="form-group">
-            <input type="submit" class="btn btn-primary" value="Save" />
+            <input type="submit" class="btn btn-primary" value="Update" />
             <a asp-action="Index" class="btn btn-success">Back to List</a>
         </div>
     </div>
@@ -30,5 +31,5 @@
 
 @section Scripts{
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");
-        }
+    }
 }

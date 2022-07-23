@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using OnlineShop.Models;
 using Webshop.Models;
 
 namespace Webshop.Data
@@ -13,6 +14,7 @@ namespace Webshop.Data
         }
 
         public DbSet<ProductTypes> ProductTypes { get; set; }
+        public DbSet<SpecialTag> SpecialTags { get; set; }
     }
 
 }

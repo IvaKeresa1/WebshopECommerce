@@ -22,6 +22,7 @@
     <None Remove="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
     <None Remove="Swashbuckle.AspNetCore" />
     <None Remove="Areas\Admin\Views\ProductTypes\" />
+    <None Remove="Areas\Admin\Views\SpecialTag\" />
   </ItemGroup>
   <ItemGroup>
     <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
@@ -52,5 +53,6 @@
     <Folder Include="Controllers\" />
     <Folder Include="Areas\Customer\Views\Home\" />
     <Folder Include="Areas\Admin\Views\ProductTypes\" />
+    <Folder Include="Areas\Admin\Views\SpecialTag\" />
   </ItemGroup>
 </Project>
